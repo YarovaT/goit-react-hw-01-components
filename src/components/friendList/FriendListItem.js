@@ -1,13 +1,14 @@
 import React from 'react';
 import defaultAvatar from '../default.svg';
 import PropTypes from 'prop-types';
+import s from './FriendList.module.css';
 
 const FriendListItem = ({ isOnline, avatar, name }) => {
   return (
     <>
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
+      <span className={s[isOnline]}>{isOnline}</span>
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
     </>
   );
 };
@@ -19,7 +20,7 @@ FriendListItem.defaultProps = {
 FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+  isOnline: PropTypes.oneOf([true, false]).isRequired,
 };
 
 export default FriendListItem;
