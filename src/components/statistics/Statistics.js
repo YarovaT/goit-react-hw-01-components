@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section class="statistics">
-      <h2 class="title">{title}</h2>
+    <section className="statistics">
+      <h2 className="title">{title}</h2>
 
-      <ul class="stat-list">
-        {stats.map((stat) => (
-          <li class="item" key={stat.id}>
-            <span class="label">{stat.label} </span>
-            <span class="percentage">{stat.percentage}%</span>
+      <ul className="stat-list">
+        {stats.map(stat => (
+          <li className="item" key={stat.id}>
+            <span className="label">{stat.label} </span>
+            <span className="percentage">{stat.percentage}%</span>
           </li>
         ))}
       </ul>
@@ -22,7 +22,7 @@ Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };
 
