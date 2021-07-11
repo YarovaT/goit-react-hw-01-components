@@ -1,0 +1,23 @@
+.statistics {
+  background: #ffffff;
+}
+
+.title {
+  text-align: center;
+}
+
+.stat-list {
+  background-color: #0000ff;
+}
+
+.item {
+  color: #ffffff;
+}
+
+/* .label {
+  color: #ffffff;
+} */
+
+.percentage {
+  color: #0000ff;
+}
