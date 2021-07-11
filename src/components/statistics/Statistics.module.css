@@ -12,16 +12,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 25px;
+  list-style: none;
 }
 
 .item {
   color: #ffffff;
 }
-
-/* .label {
-  color: #ffffff;
-} */
 
 .percentage {
   color: #ffffff;
