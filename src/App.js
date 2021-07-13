@@ -1,16 +1,16 @@
 import React from 'react';
 
 import User from './components/profile/Profile';
-import user from './components/profile/user.json';
+import user from './data/user.json';
 
 import Statistics from './components/statistics/Statistics';
-import statisticalData from './components/statistics/statistical-data.json';
+import statisticalData from './data/statistical-data.json';
 
 import FriendList from './components/friendList/FriendList';
-import friends from './components/friendList/friends.json';
+import friends from './data/friends.json';
 
 import TransactionHistory from './components/transactionHistory/TransactionHistory';
-import transactions from './components/transactionHistory/transactions.json';
+import transactions from './data/transactions.json';
 
 const App = () => {
   return (
