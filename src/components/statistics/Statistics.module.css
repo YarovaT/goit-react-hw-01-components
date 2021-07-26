@@ -7,7 +7,7 @@
   text-transform: uppercase;
 }
 
-.stat_list {
+.statList {
   background-color: #0000ff;
   display: flex;
   justify-content: space-between;
